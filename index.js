@@ -1,3 +1,11 @@
 import ajv from 'ajv';
+const apply = require('ajv-formats-draft2019');
+const ajv = new Ajv();
+apply(ajv); // returns ajv instance, allowing chaining
 
-console.log(JSON.stringify({ajv},null,2));
+let schema = {
+    type: 'string',
+    format: 'idn-email',
+};
+console.log(ajv.validate(schema, 'квіточка@пошта.укр')); // returns true
+
