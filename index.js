@@ -1,4 +1,4 @@
-import ajv from 'ajv';
+const Ajv = require('ajv');
 const apply = require('ajv-formats-draft2019');
 const ajv = new Ajv();
 apply(ajv); // returns ajv instance, allowing chaining
