@@ -1,0 +1,14 @@
+{
+  "name": "module-mapping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild --minify --bundle --target=chrome91 index.js"
+  },
+  "dependencies": {
+    "ajv": "^8.6.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.15"
+  }
+}
