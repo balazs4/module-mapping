@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild --minify --bundle --target=chrome91 index.js"
+    "build": "esbuild --minify --bundle --target=chrome91 --external:util index.js"
   },
   "dependencies": {
     "ajv": "^8.6.1",
