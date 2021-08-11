@@ -1,14 +1,18 @@
 {
-  "name": "module-mapping",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "test-project",
+  "version": "0.0.0",
   "scripts": {
-    "build": "esbuild --minify --bundle --target=chrome91 index.js"
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
-    "ajv": "^8.6.1"
+    "ajv": "^8.6.2",
+    "ajv-formats": "^2.1.0",
+    "ajv-formats-draft2019": "^1.6.1",
+    "vue": "^3.0.4"
   },
   "devDependencies": {
-    "esbuild": "^0.12.15"
+    "vite": "^1.0.0-rc.13",
+    "@vue/compiler-sfc": "^3.0.4"
   }
 }
